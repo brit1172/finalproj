@@ -11,7 +11,7 @@ import AVFoundation
 
 class timer1ViewController: UIViewController {
 
-    var seconds = 30
+    var minutes = 25
     var timer = Timer()
     var audioPlayer = AVAudioPlayer()
     
@@ -20,23 +20,23 @@ class timer1ViewController: UIViewController {
     @IBOutlet weak var sliderOutlet: UISlider!
     
     @IBAction func slider(_ sender: UISlider) {
-        seconds = Int(sender.value)
-        lable.text = String(seconds) + " Seconds"
+        minutes = Int(sender.value)
+        lable.text = String(minutes) + " Minutes"
     }
     
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func startButton(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timer1ViewController.counter), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(timer1ViewController.counter), userInfo: nil, repeats: true)
         
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
     }
     
     @objc func counter() {
-        seconds -= 1
-        lable.text = String(seconds) + " Seconds"
+        minutes -= 1
+        lable.text = String(minutes) + " Minutes"
         
-        if (seconds == 0){
+        if (minutes == 0){
             timer.invalidate()
             
             sliderOutlet.isHidden = false
@@ -49,9 +49,9 @@ class timer1ViewController: UIViewController {
     @IBOutlet weak var stopOutlet: UIButton!
     @IBAction func stopButton(_ sender: Any) {
         timer.invalidate()
-        seconds = 30
-        sliderOutlet.setValue(30, animated: true)
-        lable.text = "30 Seconds"
+        minutes = 25
+        sliderOutlet.setValue(25, animated: true)
+        lable.text = "25 Minutes"
         
         audioPlayer.stop()
         
