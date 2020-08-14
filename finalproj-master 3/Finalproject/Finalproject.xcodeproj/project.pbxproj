@@ -22,6 +22,7 @@
 		790719F824E31CF1009CB2EE /* breakActivityContinuedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719F724E31CF1009CB2EE /* breakActivityContinuedViewController.swift */; };
 		790719FA24E31D1D009CB2EE /* timer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719F924E31D1D009CB2EE /* timer2ViewController.swift */; };
 		790719FC24E31D4B009CB2EE /* endPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719FB24E31D4B009CB2EE /* endPageViewController.swift */; };
+		790C718B24E6521F008ABADE /* voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 790C718A24E6521F008ABADE /* voice.mp3 */; };
 		8A7AE64F24E46BB100140230 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7AE64E24E46BB100140230 /* AVFoundation.framework */; };
 		8A7AE65324E4710A00140230 /* soundfifteenmin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AE65224E4710A00140230 /* soundfifteenmin.mp3 */; };
 		A02DB74224E5CF2900FBE07F /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02DB74124E5CF2900FBE07F /* CanvasView.swift */; };
@@ -45,6 +46,7 @@
 		790719F724E31CF1009CB2EE /* breakActivityContinuedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breakActivityContinuedViewController.swift; sourceTree = "<group>"; };
 		790719F924E31D1D009CB2EE /* timer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer2ViewController.swift; sourceTree = "<group>"; };
 		790719FB24E31D4B009CB2EE /* endPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endPageViewController.swift; sourceTree = "<group>"; };
+		790C718A24E6521F008ABADE /* voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = voice.mp3; path = "../../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/voice.mp3"; sourceTree = "<group>"; };
 		8A7AE64E24E46BB100140230 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8A7AE65224E4710A00140230 /* soundfifteenmin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundfifteenmin.mp3; sourceTree = "<group>"; };
 		A02DB74124E5CF2900FBE07F /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		790719CC24E319D1009CB2EE = {
 			isa = PBXGroup;
 			children = (
+				790C718924E65206008ABADE /* Guided Meditation */,
 				790719D724E319D1009CB2EE /* Finalproject */,
 				790719D624E319D1009CB2EE /* Products */,
 				8A7AE64D24E46BB100140230 /* Frameworks */,
@@ -102,6 +105,14 @@
 				790719E124E319D1009CB2EE /* Finalproject.xcdatamodeld */,
 			);
 			path = Finalproject;
+			sourceTree = "<group>";
+		};
+		790C718924E65206008ABADE /* Guided Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				790C718A24E6521F008ABADE /* voice.mp3 */,
+			);
+			path = "Guided Meditation";
 			sourceTree = "<group>";
 		};
 		8A7AE64D24E46BB100140230 /* Frameworks */ = {
@@ -174,6 +185,7 @@
 				0A43E55724E44B1C00090B3A /* 1.mp3 in Resources */,
 				8A7AE65324E4710A00140230 /* soundfifteenmin.mp3 in Resources */,
 				790719E524E319D4009CB2EE /* Assets.xcassets in Resources */,
+				790C718B24E6521F008ABADE /* voice.mp3 in Resources */,
 				790719E024E319D1009CB2EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

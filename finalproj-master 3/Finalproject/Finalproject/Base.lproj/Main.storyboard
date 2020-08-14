@@ -511,6 +511,22 @@
                                     <segue destination="ULE-X2-XnP" kind="show" id="JhB-G3-wB5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zm4-4L-HX7">
+                                <rect key="frame" x="343" y="615" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="biu-7P-PbK" eventType="touchUpInside" id="9zL-T4-u6P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5e-33-8Y0">
+                                <rect key="frame" x="342" y="653" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="biu-7P-PbK" eventType="touchUpInside" id="AOg-fF-NZ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99464851160000001" green="1" blue="0.95191565909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="jcT-Gq-VY4"/>
@@ -572,7 +588,6 @@
         <!--View Controller-->
         <scene sceneID="Pk7-hg-gbJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Td5-I4-XKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="uNu-JY-raA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h8o-1J-tyv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -682,6 +697,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="XAJ-uT-jQW"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Td5-I4-XKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3566.666666666667" y="815.625"/>
         </scene>
@@ -919,8 +935,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5P9-5E-MOF"/>
-        <segue reference="qm7-9M-D7m"/>
-        <segue reference="gXO-qX-nKT"/>
+        <segue reference="ymH-YM-ZmT"/>
+        <segue reference="JhB-G3-wB5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="17148-200-1" width="200" height="200"/>
